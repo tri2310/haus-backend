@@ -1,0 +1,37 @@
+{
+  "name": "v2-backend",
+  "version": "1.0.0",
+  "description": "backend V2 Indonesia",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "V2 Indonesia",
+  "license": "ISC",
+  "dependencies": {
+    "@editvr/aframe-dialog-popup-component": "^1.7.3",
+    "argon2": "^0.30.3",
+    "connect-session-sequelize": "^7.1.5",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.0",
+    "express-session": "^1.17.3",
+    "fs": "^0.0.1-security",
+    "hbs": "^4.2.0",
+    "jsonwebtoken": "^9.0.0",
+    "mysql2": "^3.0.1",
+    "node-fetch": "^3.3.0",
+    "path": "^0.12.7",
+    "sequelize": "^6.28.0",
+    "uuid": "^9.0.0",
+    "uuidv4": "^6.2.13"
+  },
+  "devDependencies": {
+    "html5-qrcode": "^2.3.6"
+  }
+}

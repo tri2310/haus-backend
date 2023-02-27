@@ -1,0 +1,67 @@
+###
+//GET all avatar
+GET http://127.0.0.1:5000/avatar
+
+###
+//create users
+POST http://localhost:5000/users HTTP/1.1
+Content-Type: application/json
+
+{
+ "name": "Admin",
+  "email" : "admin@gmail.com",
+  "password":"1234567",
+  "confPassword":"1234567",
+  "role":"admin"
+}
+
+
+###
+//Get all users
+GET http://localhost:5000/users
+
+###
+//Get Single User
+GET http://localhost:5000/users/7bc89774-8a73-4a75-9fa6-9f2e9f20f339
+
+###
+//update users
+PATCH http://localhost:5000/users/7bc89774-8a73-4a75-9fa6-9f2e9f20f339 HTTP/1.1
+Content-Type: application/json
+
+{
+ "name": "v2 Metaverse Indonesia",
+  "email" : "admin@gmail.com",
+  "password":"",
+  "confPassword":"",
+  "role":"admin"
+}
+
+
+###
+//login admin
+POST http://localhost:5000/login HTTP/1.1
+Content-Type: application/json
+
+{
+  "email" : "admin@gmail.com",
+  "password":"1234567"
+}
+
+###
+//login user
+POST http://localhost:5000/login/ HTTP/1.1
+Content-Type: application/json
+
+{
+  "email" : "user@gmail.com",
+  "password":"1234567"
+}
+
+###
+//user has Login
+GET http://localhost:5000/haslogin/ HTTP/1.1
+
+###
+//logout
+DELETE http://localhost:5000/logout HTTP/1.1
